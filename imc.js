@@ -13,7 +13,7 @@ function imc(){
         calcularIMC(){
             if (this.altura > 3) this.altura=this.altura/100
             const imc = this.peso/this.altura**2;
-            if (imc < 18.5 ) this.classificacao = "magreza"
+            if (imc < 18.5 ) this.classificacao = "magreza leve"
             if (imc >= 18.5 &&  imc < 25 ) this.classificacao = "saudavel"
             if (imc >= 25 &&  imc < 30 ) this.classificacao = "sobrepeso"
             if (imc >= 30 &&  imc < 35 ) this.classificacao = "obesidade"
@@ -29,5 +29,5 @@ function imc(){
     console.log(paciente)
     console.log(paciente.calcularIMC())
     let resposta=document.getElementById('resposta');
-    resposta.innerHTML="Seu IMC A© "+paciente.calcularIMC()+". " + "Sua classificacao de peso A© " + paciente.classificacao;
+    resposta.innerHTML="Seu IMC Ã© "+paciente.calcularIMC()+". " + "Sua classificacao de peso Ã© " + paciente.classificacao;
 }
