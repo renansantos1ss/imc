@@ -2,10 +2,10 @@ function imc(){
     const formulario = document.getElementsByName("formulário")[0]
     const formados = new FormData(formulario)
     const paciente = {
-        nome:formados.get("nome"),
-        email:formados.get("email"),
-        dataNasc:formados.get("nasc"),
-        telefone:formados.get("tel"),
+        nome:formDados.get("nome"),
+        email:formDados.get("email"),
+        dataNasc:formDados.get("nasc"),
+        telefone:formDados.get("tel"),
         sexo:document.querySelector('input[name=sexo]:checked').value,
         peso:formados.get("peso"),
         altura:formados.get("altura"),
