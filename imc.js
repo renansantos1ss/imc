@@ -1,6 +1,6 @@
 function imc(){
     const formulário = document.getElementsByName("formulário")[0]
-    const formados = new Formdata(formulário)
+    const formados = new FormData(formulário)
     const paciente = {
         nome:formados.get("nome"),
         email:formados.get("email"),
