@@ -1,6 +1,6 @@
 function imc(){
     const formulário = document.getElementsByName("formulário")[0]
-    const formados = new FormData(formulário)
+    const formados = new FormData(formulario)
     const paciente = {
         nome:formados.get("nome"),
         email:formados.get("email"),
@@ -14,10 +14,10 @@ function imc(){
             if (this.altura > 3) this.altura=this.altura/100
             const imc = this.peso/this.altura**2;
             if (imc < 18.5 ) this.classificacao = "obesidade morbida"
-            if (imc >= 18.5 &&  imc < 25 ) this.classificacao = "saudavel"
-            if (imc >= 25 &&  imc < 30 ) this.classificacao = "sobrepeso"
-            if (imc >= 30 &&  imc < 35 ) this.classificacao = "obesidade"
-            if (imc >= 35 &&  imc < 40 ) this.classificacao = "obesidade Severa"
+            if (imc >= 18.5 &&  imc < 25 ) this.classificacão = "saudavel"
+            if (imc >= 25 &&  imc < 30 ) this.classificação = "sobrepeso"
+            if (imc >= 30 &&  imc < 35 ) this.classificacão = "obesidade"
+            if (imc >= 35 &&  imc < 40 ) this.classificacão = "obesidade Severa"
             if (imc >= 40 ) this.classificacao = "magreza"
             return imc.toFixed(2);
         
