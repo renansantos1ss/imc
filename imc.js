@@ -16,7 +16,7 @@ function imc(){
             if (imc < 18.5 ) this.classificacao = "magreza"
             if (imc >= 18.5 &&  imc < 25 ) this.classificacao = "saudavel"
             if (imc >= 25 &&  imc < 30 ) this.classificacao = "sobrepeso"
-            if (imc >= 30 &&  imc < 35 ) this.classificacao = "obesidade "
+            if (imc >= 30 &&  imc < 35 ) this.classificacao = "obesidade"
             if (imc >= 35 &&  imc < 40 ) this.classificacao = "obesidade severa"
             if (imc >= 40 ) this.classificacao = "obsidade morbida"
             return imc.toFixed(2);
