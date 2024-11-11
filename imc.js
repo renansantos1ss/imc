@@ -1,14 +1,14 @@
 function imc(){
     const formulario = document.getElementsByName("formulário")[0]
-    const formados = new FormData(formulario)
+    const forDmados = new FormData(formulario)
     const paciente = {
         nome:formDados.get("nome"),
         email:formDados.get("email"),
         dataNasc:formDados.get("nasc"),
         telefone:formDados.get("tel"),
         sexo:document.querySelector('input[name=sexo]:checked').value,
-        peso:formados.get("peso"),
-        altura:formados.get("altura"),
+        peso:forDmados.get("peso"),
+        altura:forDmados.get("altura"),
         classificacao:"",
         calcularIMC(){
             if (this.altura > 3) this.altura=this.altura/100
